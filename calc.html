@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    prompt: It will take a value/input from user through prompt, and also it take as text input
+    parseInt: It will convert the text into number
+    console.log: to display browser's console
+    break: it will execute only selected/choice case only..
+    -->
+    <script>
+        no1 = parseInt(prompt("Enter number 1"))  //no1 =10
+        no2 = parseInt(prompt("Enter number 2")) //no2 =20
+        choice = parseInt(prompt("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\nEnter your choice"))
+        sum=no1+no2;
+        sub=no1-no2;
+        mul=no1*no2;
+        div=no/no2;
+
+        switch(choice){
+            case 1:
+                console.log("addition is " + sum) // 10 and 20
+                break;
+            case 2:
+                console.log("subtraction is " + sub) // 10 and 20
+                break;
+            case 3:
+                console.log("multiplication is " + mul) // 10 and 20
+                break;
+            case 4:
+                console.log("Division is " + div) // 10 and 20
+                break;
+            default:
+                console.log("Enter a valid choice....")
+        }
+    </script>
+</body>
+</html>

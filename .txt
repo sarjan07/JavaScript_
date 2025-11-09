@@ -1,0 +1,66 @@
+to save js file with .js extension
+
+---> let
+        latest version
+        we can change its value using below method
+        for block scope only
+        ex.
+          a=20; {
+          let a=10;
+          }
+            console.log(a);
+
+---> var
+        old version
+        for global scope only
+var a=10 {
+
+    console.log(a);
+}
+console.log(a);
+        ex.
+          var a=20
+          var b=30
+
+
+
+---> const:
+        to store constant 
+        never change its value
+syntax: const a=10;
+
+
+-> 3 ways to script for a js file 
+    1. Internal
+        <head>
+            <script>
+            document.write("Hello World");
+            </script>
+        </head>
+    2. External
+        <link rel="script" href="one.js">
+
+    3. Body
+
+    <body>
+    
+    
+    <script>
+        document.write("Hello World");
+    </script>
+    </body>
+
+
+
+-> document.write(""):-  to print on browser's screen(in script tag)
+-> console.log("")   :-  to print on browser's console(in script tag)
+
+
+num1 = prompt("Enter number 1");
+num2 = prompt("Enter number 2");
+
+prompt only get input as string from user
+num1 and num2 are work like string 
+
+num1 =prompt(parseInt("Enter number 1"))
+num2 =prompt(parseInt("Enter number 2"))
