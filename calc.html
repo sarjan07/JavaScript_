@@ -8,7 +8,7 @@
 <body>
     <!-- 
     prompt: It will take a value/input from user through prompt, and also it take as text input
-    parseInt: It will convert the text into number
+    parseInt: It will convert the text into number/interger
     console.log: to display browser's console
     break: it will execute only selected/choice case only..
     -->
@@ -19,20 +19,21 @@
         sum=no1+no2;
         sub=no1-no2;
         mul=no1*no2;
-        div=no/no2;
+        div=no1/no2;
 
         switch(choice){
             case 1:
-                console.log("addition is " + sum) // 10 and 20
+                console.log("addition is " + sum) // addition is 30
+                document.writeln("addition is " + sum)
                 break;
             case 2:
-                console.log("subtraction is " + sub) // 10 and 20
+                console.log("subtraction is " + sub)
                 break;
             case 3:
-                console.log("multiplication is " + mul) // 10 and 20
+                console.log("multiplication is " + mul) 
                 break;
             case 4:
-                console.log("Division is " + div) // 10 and 20
+                console.log("Division is " + div) 
                 break;
             default:
                 console.log("Enter a valid choice....")

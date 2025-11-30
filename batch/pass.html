@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <style>
+
+        /* BEAUTIFUL GRADIENT BACKGROUND */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            height: 100vh;
+
+            /* Center box vertically + horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* MAIN CONTAINER WITH PERFECT HEIGHT */
+        .container {
+            width: 380px;
+            background: #ffffff;
+            padding: 20px 22px;
+            border-radius: 12px;
+
+            /* Soft smooth shadow */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.22);
+
+            /* Prevent container from becoming too tall */
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        h2 {
+            margin: 0 0 15px 0;
+            text-align: center;
+            color: #222;
+            font-size: 22px;
+        }
+
+        /* INPUT BOX (PASSWORD TEXT FIELD) */
+        .inputb input {
+            width: 100%;
+            padding: 8px 10px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background: #fafafa;
+        }
+
+        #inputSlider {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #555;
+            font-size: 14px;
+        }
+
+        #sliderValue {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #eee;
+            border-radius: 6px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        }
+
+        /* CHECKBOX ROW */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 7px 0;
+        }
+
+        .row label {
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* BUTTON */
+        #genBtn {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-radius: 6px;
+
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+
+            margin-top: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.20);
+            transition: 0.25s ease-in-out;
+        }
+
+        #genBtn:hover {
+            transform: scale(1.03);
+            background: linear-gradient(135deg, #0072ff, #00c6ff);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+
+        <div class="inputb">
+            <input type="text" class="pass" id="passBox"> 
+        </div>
+
+        <input type="range" min="1" max="30" value="7" id="inputSlider">
+        <p>Password Length</p>
+        <span id="sliderValue"></span>
+
+        <div class="row">
+            <label for="lowercase">Include Lowercase (a-z)</label>
+            <input type="checkbox" id="lowercase">
+        </div>
+
+        <div class="row">
+            <label for="uppercase">Include Uppercase (A-Z)</label>
+            <input type="checkbox" id="uppercase">
+        </div>
+
+        <div class="row">
+            <label for="number">Include Number (0-9)</label>
+            <input type="checkbox" id="number">
+        </div>
+
+        <div class="row">
+            <label for="symbol">Include Symbols</label>
+            <input type="checkbox" id="symbol">
+        </div>
+        <button type="submit" id="genBtn">Generate Password</button>
+    </div>
+    <script src="passs.js"></script>
+</body>
+</html>
